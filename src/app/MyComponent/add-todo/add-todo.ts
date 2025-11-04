@@ -7,14 +7,14 @@ import { Todo } from '../../Todo';
   selector: 'app-add-todo',
   imports: [CommonModule,FormsModule],
   templateUrl: './add-todo.html',
-  styleUrl: './add-todo.css',
+  styleUrls: ['./add-todo.css'],
   standalone: true,
 })
 export class AddTodo {
   title!:string;
   desc!:string;
   @Output() todoAdd: EventEmitter<Todo> = new EventEmitter();
-  
+  @Output() todoCheckboxToggle: EventEmitter<Todo> = new EventEmitter();
   constructor() {}
   onSubmit(){
     const todo = {

@@ -1,0 +1,9 @@
+.strike {
+  text-decoration: line-through;
+  color:black;
+}
+
+.nostrike {
+  text-decoration: none;
+  color: black;
+}
